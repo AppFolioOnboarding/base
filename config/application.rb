@@ -20,6 +20,19 @@ module Ropes
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
 
+    # unsafe-eval is needed for script-src due to bootstrap
+    # There is an outstanding issue to hopefully make that unnecessary:
+    # https://github.com/twbs/bootstrap/issues/17964
+    csp_settings = ["connect-src 'self'",
+                    "default-src 'none'",
+                    'font-src https://cdn.jsdelivr.net',
+                    "img-src 'self' http: https:",
+                    "script-src 'self' 'unsafe-eval'",
+                    "style-src 'self' https://cdn.jsdelivr.net"]
+    config.action_dispatch.default_headers = {
+      'Content-Security-Policy' => csp_settings.join(';')
+    }
+
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
   end
