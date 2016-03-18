@@ -1,3 +1,5 @@
-== README
+# Ropes Project
 
-{<img src="https://raw.githubusercontent.com/AppFolioOnboarding/tasks/master/dependencies.png" />}[https://github.com/AppFolioOnboarding/tasks]
+## Task Dependency Graph
+
+[![Dependencies](https://raw.githubusercontent.com/AppFolioOnboarding/tasks/master/dependencies.png)](https://github.com/AppFolioOnboarding/tasks)
