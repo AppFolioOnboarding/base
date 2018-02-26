@@ -5,6 +5,7 @@ require 'capybara/rails'
 require 'capybara/dsl'
 require 'ae_page_objects'
 require 'ae_page_objects/rails'
+require 'page_objects/document'
 
 module PageObjects
 end
