@@ -121,7 +121,7 @@ GEM
       pronto (~> 0.10.0)
       rubocop (~> 0.50, >= 0.49.1)
     public_suffix (3.1.1)
-    puma (3.12.1)
+    puma (3.12.3)
     rack (2.0.7)
     rack-proxy (0.6.5)
       rack
@@ -231,7 +231,7 @@ DEPENDENCIES
   listen (~> 3.0.5)
   pg
   pronto-rubocop
-  puma (~> 3.0)
+  puma (~> 3.12)
   rails (~> 5.2.0)
   sass-rails (~> 5.0, >= 5.0.6)
   selenium-webdriver
