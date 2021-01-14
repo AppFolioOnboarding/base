@@ -3,6 +3,7 @@
 import 'jsdom-global/register';
 import Adapter from 'enzyme-adapter-react-16/build/index';
 import { configure } from 'enzyme';
+import 'regenerator-runtime/runtime';
 
 configure({ adapter: new Adapter() });
 
