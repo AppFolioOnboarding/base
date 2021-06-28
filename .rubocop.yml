@@ -8,10 +8,10 @@ AllCops:
     - 'bin/*'
   TargetRubyVersion: 2.5
 
-Layout/IndentFirstArrayElement:
+Layout/FirstArrayElementIndentation:
   EnforcedStyle: consistent
 
-Layout/IndentFirstHashElement:
+Layout/FirstHashElementIndentation:
   EnforcedStyle: consistent
 
 Layout/MultilineMethodCallIndentation:
@@ -19,9 +19,6 @@ Layout/MultilineMethodCallIndentation:
 
 Metrics/LineLength:
   Max: 112  # Maximum line length from `rails new`
-
-Rails:
-  Enabled: true
 
 Style/Documentation:
   Enabled: false
